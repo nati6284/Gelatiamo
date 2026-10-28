@@ -9,354 +9,432 @@ export const locations = [
 export const menuData = {
   breakfast: [
     {
-      name: 'Gelatiamo Breakfast Combo',
-      description: 'Egg scrambled, kifli, cheddar cheese, kircha, breakfast potato, avocado slice, boiled egg',
-      price: '250.00',
-      image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=85',
-      popular: true
-    },
-    {
-      name: 'Scrambled Eggs',
-      description: 'Fluffy scrambled eggs served with fresh bread',
-      price: '80.00',
-      image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Omelette',
-      description: 'Three egg omelette with your choice of fillings',
-      price: '90.00',
-      image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'French Toast',
-      description: 'Classic French toast with maple syrup and butter',
-      price: '120.00',
-      image: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Pancakes',
-      description: 'Stack of fluffy pancakes with syrup',
-      price: '130.00',
-      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Avocado Toast',
-      description: 'Smashed avocado on toasted bread with olive oil',
-      price: '140.00',
-      image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=900&q=85',
-      popular: true
-    }
-  ],
-  torta: [
-    {
-      name: 'Chocolate Torta',
-      description: 'Rich chocolate layered cake with dark chocolate ganache',
-      price: '180.00',
-      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85',
-      popular: true
-    },
-    {
-      name: 'Tiramisu',
-      description: 'Classic Italian coffee-flavored dessert',
-      price: '200.00',
-      image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85',
-      popular: true
-    },
-    {
-      name: 'Strawberry Torta',
-      description: 'Light sponge cake with fresh strawberries and cream',
-      price: '170.00',
-      image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Lemon Torta',
-      description: 'Tangy lemon cream torta with meringue topping',
-      price: '160.00',
-      image: 'https://images.unsplash.com/photo-1519915212116-715cd906b688?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Pistachio Torta',
-      description: 'Italian pistachio cream layered cake',
-      price: '190.00',
-      image: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=85'
-    }
-  ],
-  boxes: [
-    {
-      name: 'Classic Box',
-      description: 'Assorted gelato flavors in a box (500ml)',
+      name: 'Pancake with Syrup/Honey',
+      description: 'Fluffy pancakes served with syrup or honey',
       price: '300.00',
-      image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Premium Box',
-      description: 'Premium gelato selection with special flavors (500ml)',
-      price: '350.00',
-      image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=900&q=85',
+      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=900&q=85',
       popular: true
     },
     {
-      name: 'Family Box',
-      description: 'Large family size gelato box (1L)',
-      price: '550.00',
-      image: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Sorbet Box',
-      description: 'Refreshing fruit sorbet selection (500ml)',
-      price: '280.00',
-      image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85'
-    }
-  ],
-  iceCream: [
-    {
-      name: 'Vanilla',
-      description: 'Classic Madagascar vanilla bean gelato',
-      price: '80.00',
+      name: 'Vanilla with Double Scoop',
+      description: 'Vanilla dessert with double scoop of ice cream',
+      price: '420.00',
       image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Chocolate',
-      description: 'Rich Belgian dark chocolate gelato',
-      price: '80.00',
-      image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85',
+      name: 'Vanilla with Single Scoop',
+      description: 'Vanilla dessert with single scoop of ice cream',
+      price: '420.00',
+      image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Crepes with Double Scoop',
+      description: 'Thin French crepes with double scoop of ice cream',
+      price: '610.00',
+      image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=900&q=85',
       popular: true
     },
     {
-      name: 'Strawberry',
-      description: 'Fresh strawberry gelato with real fruit pieces',
-      price: '85.00',
-      image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=85'
+      name: 'Crepes with Single Scoop',
+      description: 'Thin French crepes with single scoop of ice cream',
+      price: '310.00',
+      image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Pistachio',
-      description: 'Authentic Sicilian pistachio gelato',
-      price: '100.00',
-      image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85',
-      popular: true
+      name: 'Brownie with Double Scoop',
+      description: 'Rich chocolate brownie with double scoop of ice cream',
+      price: '500.00',
+      image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Hazelnut',
-      description: 'Creamy hazelnut gelato with roasted nuts',
-      price: '95.00',
-      image: 'https://images.unsplash.com/photo-1516043984274-256783499f68?auto=format&fit=crop&w=900&q=85'
+      name: 'Brownie with Single Scoop',
+      description: 'Rich chocolate brownie with single scoop of ice cream',
+      price: '500.00',
+      image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Mango',
-      description: 'Tropical mango sorbet, dairy-free',
-      price: '85.00',
-      image: 'https://images.unsplash.com/photo-1631203404683-891c1c7ad6b5?auto=format&fit=crop&w=900&q=85'
+      name: 'Veg Cup',
+      description: 'Healthy vegetable cup',
+      price: '530.00',
+      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Lemon Sorbet',
-      description: 'Refreshing lemon sorbet, dairy-free',
-      price: '75.00',
-      image: 'https://images.unsplash.com/photo-1568471173238-64fbdecfc4bb?auto=format&fit=crop&w=900&q=85'
+      name: 'Chicken Rug',
+      description: 'Chicken wrap',
+      price: '350.00',
+      image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Stracciatella',
-      description: 'Fior di latte with chocolate shavings',
-      price: '90.00',
-      image: 'https://images.unsplash.com/photo-1560008581-09b80d4a876f?auto=format&fit=crop&w=900&q=85'
+      name: 'Special Chocobaca',
+      description: 'Special chocolate treat',
+      price: '450.00',
+      image: 'https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Salted Caramel',
-      description: 'Sweet and salty caramel gelato',
-      price: '95.00',
-      image: 'https://images.unsplash.com/photo-1629796847345-9c1093e73df4?auto=format&fit=crop&w=900&q=85',
-      new: true
+      name: 'Egg Sandwich',
+      description: 'Fresh egg sandwich',
+      price: '450.00',
+      image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Coffee',
-      description: 'Intense Ethiopian coffee gelato',
-      price: '90.00',
-      image: 'https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=900&q=85'
+      name: 'Club Sandwich',
+      description: 'Classic club sandwich',
+      price: '400.00',
+      image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Fettia',
+      description: 'Traditional breakfast',
+      price: '210.00',
+      image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Special Fettia',
+      description: 'Special traditional breakfast',
+      price: '450.00',
+      image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Ful',
+      description: 'Traditional fava bean dish',
+      price: '250.00',
+      image: 'https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Special Ful',
+      description: 'Special fava bean dish with extras',
+      price: '370.00',
+      image: 'https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Avocado Toast',
+      description: 'Fresh avocado on toasted bread',
+      price: '320.00',
+      image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Firfir Toast',
+      description: 'Traditional firfir with toast',
+      price: '350.00',
+      image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=85'
     }
   ],
   cakes: [
     {
-      name: 'Chocolate Fudge Cake',
-      description: 'Multi-layered chocolate cake with fudge frosting',
-      price: '450.00',
-      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85',
+      name: 'Tiramisu Cake',
+      description: 'Classic Italian coffee-flavored cake',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85',
       popular: true
     },
     {
-      name: 'Red Velvet Cake',
-      description: 'Classic red velvet with cream cheese frosting',
-      price: '480.00',
-      image: 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=900&q=85'
+      name: 'Banana Cake',
+      description: 'Moist banana cake',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1587241321921-91a834d82be4?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Carrot Cake',
-      description: 'Moist carrot cake with walnuts and cream cheese',
-      price: '420.00',
+      name: 'Raisin Cake',
+      description: 'Traditional raisin cake',
+      price: '100.00',
       image: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Black Forest',
-      description: 'Chocolate cake with cherry filling and whipped cream',
-      price: '500.00',
-      image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85',
+      name: 'Bakelawo',
+      description: 'Middle Eastern baklava pastry',
+      price: '160.00',
+      image: 'https://images.unsplash.com/photo-1598110750624-207050c4f28c?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Boysinga',
+      description: 'Special cake',
+      price: '160.00',
+      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Donatimao',
+      description: 'Italian donut pastry',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Cheese Cake',
+      description: 'Creamy New York style cheesecake',
+      price: '320.00',
+      image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=85',
       popular: true
     },
     {
-      name: 'Vanilla Cake',
-      description: 'Classic vanilla sponge with buttercream',
-      price: '380.00',
+      name: 'Donut',
+      description: 'Fresh glazed donut',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Browni',
+      description: 'Rich chocolate brownie',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Cream Cake',
+      description: 'Light cream-filled cake',
+      price: '180.00',
       image: 'https://images.unsplash.com/photo-1588195538326-c5b1e5b80d04?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Cheesecake',
-      description: 'New York style cheesecake with berry compote',
-      price: '460.00',
-      image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=85'
+      name: 'Soft Cake',
+      description: 'Soft sponge cake',
+      price: '160.00',
+      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85'
     }
   ],
-  coldDrinks: [
+  iceCream: [
     {
-      name: 'Fresh Orange Juice',
-      description: 'Freshly squeezed orange juice',
-      price: '60.00',
-      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Mango Smoothie',
-      description: 'Creamy mango smoothie with yogurt',
-      price: '80.00',
-      image: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=900&q=85',
+      name: '1/2 kg Ice Cream',
+      description: 'Half kilogram of your favorite ice cream flavor',
+      price: '1650.00',
+      image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=900&q=85',
       popular: true
     },
     {
-      name: 'Strawberry Smoothie',
-      description: 'Fresh strawberry smoothie',
-      price: '80.00',
-      image: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Iced Coffee',
-      description: 'Cold brew coffee over ice',
-      price: '70.00',
-      image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Iced Latte',
-      description: 'Espresso with cold milk over ice',
-      price: '75.00',
-      image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Milkshake - Vanilla',
-      description: 'Classic vanilla milkshake',
-      price: '90.00',
-      image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Milkshake - Chocolate',
-      description: 'Rich chocolate milkshake',
-      price: '90.00',
+      name: '1 kg Ice Cream',
+      description: 'One kilogram of your favorite ice cream flavor',
+      price: '3300.00',
       image: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=900&q=85',
       popular: true
     },
     {
-      name: 'Milkshake - Strawberry',
-      description: 'Fresh strawberry milkshake',
-      price: '90.00',
-      image: 'https://images.unsplash.com/photo-1620970683868-cfef7f929a3f?auto=format&fit=crop&w=900&q=85'
+      name: 'Single Scoop',
+      description: 'One scoop of gelato in your choice of flavor',
+      price: '20.00',
+      image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Lemonade',
-      description: 'Freshly made lemonade',
+      name: 'Vanilla Gelato',
+      description: 'Classic Madagascar vanilla bean gelato',
+      price: '30.00',
+      image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Chocolate Gelato',
+      description: 'Rich Belgian dark chocolate gelato',
+      price: '30.00',
+      image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85',
+      popular: true
+    },
+    {
+      name: 'Strawberry Gelato',
+      description: 'Fresh strawberry gelato with real fruit',
+      price: '30.00',
+      image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Pistachio Gelato',
+      description: 'Authentic Sicilian pistachio gelato',
+      price: '30.00',
+      image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85'
+    }
+  ],
+  torta: [
+    {
+      name: 'White & Black Torta',
+      description: 'Layered white and dark chocolate torta',
+      price: '170.00',
+      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85',
+      popular: true
+    },
+    {
+      name: 'Caramel Torta',
+      description: 'Rich caramel layered cake',
+      price: '200.00',
+      image: 'https://images.unsplash.com/photo-1629796847345-9c1093e73df4?auto=format&fit=crop&w=900&q=85',
+      popular: true
+    },
+    {
+      name: 'Chocolate Torta',
+      description: 'Dark chocolate torta',
+      price: '200.00',
+      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Special Chocolate Torta',
+      description: 'Premium special chocolate torta',
+      price: '250.00',
+      image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85',
+      popular: true
+    }
+  ],
+  coldDrinks: [
+    {
+      name: 'Cola Milk',
+      description: 'Refreshing cola milk drink',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Soft Drink',
+      description: 'Coca-Cola, Sprite, Fanta',
       price: '50.00',
+      image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Ice Coffee',
+      description: 'Cold brew coffee over ice',
+      price: '270.00',
+      image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=85',
+      popular: true
+    },
+    {
+      name: 'Ice Latte',
+      description: 'Espresso with cold milk over ice',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Solatie',
+      description: 'Special cold drink',
+      price: '190.00',
+      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Wolar',
+      description: 'Refreshing cold beverage',
+      price: '330.00',
+      image: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Iced Coffee',
+      description: 'Premium iced coffee',
+      price: '250.00',
+      image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Special Juice',
+      description: 'Special juice blend',
+      price: '190.00',
+      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Juice',
+      description: 'Fresh fruit juice',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Ice Coffee',
+      description: 'Classic iced coffee',
+      price: '270.00',
+      image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Solatie',
+      description: 'Cold special drink',
+      price: '190.00',
       image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Iced Tea',
-      description: 'Chilled peach or lemon iced tea',
-      price: '55.00',
+      name: 'Wolar',
+      description: 'Refreshing beverage',
+      price: '160.00',
       image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Sparkling Water',
-      description: 'Italian sparkling mineral water',
-      price: '45.00',
-      image: 'https://images.unsplash.com/photo-1586795010164-ddd7b21cd22b?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Soft Drinks',
-      description: 'Coca-Cola, Sprite, Fanta',
-      price: '40.00',
-      image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=900&q=85'
+      name: 'Milk Shake',
+      description: 'Creamy milkshake in various flavors',
+      price: '330.00',
+      image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=85',
+      popular: true
     }
   ],
   hotDrinks: [
     {
-      name: 'Espresso',
-      description: 'Single shot of Italian espresso',
-      price: '45.00',
-      image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=900&q=85'
+      name: 'Macchiato',
+      description: 'Espresso with a dash of foam',
+      price: '110.00',
+      image: 'https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?auto=format&fit=crop&w=900&q=85',
+      popular: true
     },
     {
-      name: 'Double Espresso',
-      description: 'Double shot of Italian espresso',
-      price: '60.00',
+      name: 'Fist',
+      description: 'Special hot beverage',
+      price: '130.00',
       image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Americano',
-      description: 'Espresso with hot water',
-      price: '55.00',
-      image: 'https://images.unsplash.com/photo-1528833683149-e1b05e29c2ea?auto=format&fit=crop&w=900&q=85'
+      name: 'Special Tea',
+      description: 'Premium tea blend',
+      price: '70.00',
+      image: 'https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Flavor Tea',
+      description: 'Flavored specialty tea',
+      price: '80.00',
+      image: 'https://images.unsplash.com/photo-1597318300008-d2f0c41ab5a4?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Coffee',
+      description: 'Traditional Ethiopian coffee',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Milk',
+      description: 'Hot steamed milk',
+      price: '100.00',
+      image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Tea with Coffee',
+      description: 'Traditional tea and coffee blend',
+      price: '130.00',
+      image: 'https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Cold with Coffee',
+      description: 'Coffee with cold milk',
+      price: '150.00',
+      image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85'
     },
     {
       name: 'Cappuccino',
       description: 'Espresso with steamed milk and foam',
-      price: '70.00',
+      price: '200.00',
       image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85',
       popular: true
     },
     {
-      name: 'Latte',
-      description: 'Espresso with steamed milk',
-      price: '75.00',
-      image: 'https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=900&q=85',
-      popular: true
-    },
-    {
-      name: 'Macchiato',
-      description: 'Espresso marked with foam',
-      price: '65.00',
-      image: 'https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Flat White',
-      description: 'Espresso with microfoam milk',
-      price: '75.00',
-      image: 'https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&fit=crop&w=900&q=85'
-    },
-    {
-      name: 'Mocha',
-      description: 'Espresso with chocolate and steamed milk',
-      price: '85.00',
-      image: 'https://images.unsplash.com/photo-1607260550778-aa9d29444ce1?auto=format&fit=crop&w=900&q=85'
-    },
-    {
       name: 'Hot Chocolate',
       description: 'Rich Italian hot chocolate',
-      price: '80.00',
+      price: '200.00',
       image: 'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Tea - Black/Green',
-      description: 'Selection of premium teas',
-      price: '50.00',
-      image: 'https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?auto=format&fit=crop&w=900&q=85'
+      name: 'Espresso',
+      description: 'Double shot Italian espresso',
+      price: '110.00',
+      image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=900&q=85'
     },
     {
-      name: 'Herbal Tea',
-      description: 'Chamomile, mint, or ginger tea',
-      price: '55.00',
-      image: 'https://images.unsplash.com/photo-1597318300008-d2f0c41ab5a4?auto=format&fit=crop&w=900&q=85'
+      name: 'Americano Coffee',
+      description: 'Espresso with hot water',
+      price: '110.00',
+      image: 'https://images.unsplash.com/photo-1528833683149-e1b05e29c2ea?auto=format&fit=crop&w=900&q=85'
+    },
+    {
+      name: 'Caramel Macchiato',
+      description: 'Espresso with vanilla and caramel',
+      price: '150.00',
+      image: 'https://images.unsplash.com/photo-1599639957043-f3aa5c986398?auto=format&fit=crop&w=900&q=85',
+      popular: true
+    },
+    {
+      name: 'Afgato',
+      description: 'Espresso poured over ice cream',
+      price: '300.00',
+      image: 'https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=900&q=85',
+      popular: true
     }
   ]
 }
