@@ -33,9 +33,9 @@ const words = {
     }
   },
   am: {
-    home:'መነሻ', menu:'ምናሌ', story:'ስለ እኛ', contact:'አድራሻ', reserve:'ጠረጴዛ ይያዙ', order:'አሁን ይዘዙ', locations:'ቦታዎች',
+    home:'መነሻ', menu:'የምግብ ዝርዝር', story:'ስለ እኛ', contact:'አድራሻ', reserve:'ጠረጴዛ ይያዙ', order:'አሁን ይዘዙ', locations:'ቦታዎች',
     eyebrow:'የዕለት ደስታ', headline:'በፍቅር ተዘጋጅቶ።\nበልብ ይቀርባል።', intro:'ትክክለኛ የጣሊያን ጀላቶ፣ ትኩስ ጣዕም እና ጣፋጭ ጊዜያትን ለመደሰት ምቹ ቦታ።',
-    explore:'ምናሌውን ይመልከቱ', favorites:'ተወዳጅ ምርጫዎች', favoritesSub:'ሊጎበኙን የሚያነሳሱ ጣፋጭ ምርጫዎች።', viewMenu:'ሙሉ ምናሌ',
+    explore:'የምግብ ዝርዝር ይመልከቱ', favorites:'ተወዳጅ ምርጫዎች', favoritesSub:'ሊጎበኙን የሚያነሳሱ ጣፋጭ ምርጫዎች።', viewMenu:'ሙሉ ምናሌ',
     storyTitle:'እንደ ቤት የሚሰማ ቦታ', storyText:'ምርጥ ጊዜዎች በጣፋጭ ጣዕም ዙሪያ ይፈጠራሉ ብለን እናምናለን።',
     fresh:'ትኩስ ዝግጅት', freshText:'በየቀኑ በጥንቃቄ ከተመረጡ ግብዓቶች እና ባህላዊ የጣሊያን ዘዴዎች ይዘጋጃል።',
     local:'የጣሊያን ባህል', localText:'ትክክለኛ የጀላቶ አሰራር ባህልን በኢትዮጵያ አቀባበል እናከብራለን።',

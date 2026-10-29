@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { ArrowRight, Check, ChefHat, Clock, Coffee, Instagram, MapPin, Menu as MenuIcon, X, Facebook } from 'lucide-react'
-import { QRCodeSVG } from 'qrcode.react'
 import { I18nProvider, useI18n } from './i18n'
 import { cafeConfig } from './config'
 import { locations, menuData } from './data'
@@ -121,8 +120,8 @@ function LocationsPage({branches}) {
  return <><section className="page-banner"><span className="eyebrow">VISIT US</span><h1>{t('locations')}</h1><p>We have 5 locations across Addis Ababa to serve you.</p></section><section className="section"><div className="menu-grid">{branches.map(branch=><article className="menu-card" key={branch.id}><div className="menu-card-content"><div className="menu-card-title"><h3>{branch.name}</h3></div>{branch.address&&<p><MapPin size={14} style={{display:'inline',marginRight:'4px'}}/>{branch.address}</p>}{branch.phone&&<p style={{fontSize:'0.9em',opacity:0.8}}>{branch.phone}</p>}<a className="add-button" href={branch.mapUrl} target="_blank" rel="noreferrer">View on map <ArrowRight size={15}/></a></div></article>)}</div></section></>
 }
 function QRPage() {
- const {t}=useI18n();const url=typeof window!=='undefined'?`${window.location.origin}/menu`:''
- return <><section className="page-banner"><span className="eyebrow">DIGITAL MENU</span><h1>{t('qrTitle')}</h1><p>{t('qrSub')}</p><p>Print this QR code and place it on tables, the counter, or takeaway packaging.</p><button className="button" onClick={()=>window.print()}>Print QR code</button></section><section className="section qr-section"><div className="qr-copy"><span className="eyebrow eyebrow-dark">SCAN & ORDER</span><h1>Quick access to our menu</h1><p>Customers can scan this QR code to view the full menu on their phones.</p></div><div className="qr-card"><img src={cafeConfig.logo} alt="GELATIAMO" style={{width:'80px',marginBottom:'10px'}}/><QRCodeSVG value={url} size={240} level="H" includeMargin/><p>{url}</p></div></section></>
+ const {t}=useI18n()
+ return <><section className="page-banner no-print"><span className="eyebrow">DIGITAL MENU</span><h1>{t('qrTitle')}</h1><p>{t('qrSub')}</p><p>Print this QR code and place it on tables, the counter, or takeaway packaging.</p><button className="button" onClick={()=>window.print()}>Print QR code</button></section><section className="qr-print-layout"><div className="qr-print-header"><img src={cafeConfig.logo} alt="GELATIAMO" className="qr-print-logo"/><div className="qr-print-brand"><h1>GELATIAMO</h1><p>Italian Cremeria & Cafe</p></div></div><div className="qr-print-content"><div className="qr-print-main"><h2>Scan for Our Digital Menu</h2><div className="qr-code-container"><img src="/qr.png" alt="QR Code" style={{width:'280px',height:'280px',display:'block'}}/></div><p className="qr-instruction">Point your camera at the QR code to view our complete menu</p></div></div></section></>
 }
 function money(value){return new Intl.NumberFormat('en-ET',{style:'currency',currency:'ETB',maximumFractionDigits:2}).format(Number(value)||0)}
 export default function App(){return <I18nProvider><AppShell/></I18nProvider>}

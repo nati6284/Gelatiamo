@@ -822,6 +822,115 @@ button:disabled{opacity:.55;cursor:not-allowed}
   text-align:center;
 }
 
+/* QR Print Layout */
+.qr-print-layout{
+  max-width:1000px;
+  margin:0 auto;
+  padding:60px 40px;
+  background:white;
+}
+
+.qr-print-header{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  padding-bottom:40px;
+  border-bottom:3px solid var(--italian-green);
+  margin-bottom:50px;
+}
+
+.qr-print-logo{
+  width:140px;
+  height:140px;
+  object-fit:contain;
+}
+
+.qr-print-brand h1{
+  font-family:'Playfair Display',serif;
+  font-size:48px;
+  color:var(--italian-green);
+  margin:0;
+  line-height:1;
+}
+
+.qr-print-brand p{
+  font-size:18px;
+  color:var(--muted);
+  margin:8px 0 0;
+}
+
+.qr-print-content{
+  text-align:center;
+}
+
+.qr-print-main h2{
+  font-family:'Playfair Display',serif;
+  font-size:36px;
+  color:var(--italian-green);
+  margin:0 0 30px;
+}
+
+.qr-code-container{
+  display:inline-block;
+  padding:30px;
+  background:white;
+  border:3px solid var(--italian-green);
+  border-radius:12px;
+  margin:30px 0;
+  box-shadow:0 10px 40px rgba(0,146,70,0.15);
+}
+
+.qr-instruction{
+  font-size:16px;
+  color:var(--muted);
+  margin:20px 0 50px;
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.qr-print-footer{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  padding-top:40px;
+  border-top:2px solid var(--line);
+  margin-top:50px;
+  text-align:left;
+}
+
+.qr-footer-col h3{
+  font-size:16px;
+  font-weight:600;
+  color:var(--italian-green);
+  margin:0 0 12px;
+}
+
+.qr-footer-col p{
+  font-size:13px;
+  color:var(--ink);
+  margin:6px 0;
+  line-height:1.7;
+}
+
+.qr-social-links{
+  display:flex;
+  gap:12px;
+  margin-top:10px;
+}
+
+.qr-social-links svg{
+  width:22px;
+  height:22px;
+  color:var(--italian-green);
+  transition:transform 0.2s;
+  cursor:pointer;
+}
+
+.qr-social-links svg:hover{
+  transform:scale(1.1);
+}
+
 /* Admin Section */
 .admin-login-wrap{
   display:flex;
@@ -1098,8 +1207,94 @@ button:disabled{opacity:.55;cursor:not-allowed}
 }
 
 @media print{
-  .site-header,.footer,.toast{display:none!important}
-  .qr-section{display:block;padding:0}
-  .qr-card{box-shadow:none;margin:0 auto}
-  .qr-card svg{width:70mm;height:70mm}
+  .site-header,.footer,.toast,.no-print{display:none!important}
+  .qr-print-layout{
+    display:block;
+    padding:40px;
+    max-width:800px;
+    margin:0 auto;
+    page-break-inside:avoid;
+  }
+  .qr-print-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding-bottom:30px;
+    border-bottom:3px solid var(--italian-green);
+    margin-bottom:40px;
+  }
+  .qr-print-logo{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+  }
+  .qr-print-brand h1{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    color:var(--italian-green);
+    margin:0;
+  }
+  .qr-print-brand p{
+    font-size:16px;
+    color:var(--muted);
+    margin:5px 0 0;
+  }
+  .qr-print-content{
+    text-align:center;
+  }
+  .qr-print-main h2{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    color:var(--italian-green);
+    margin:0 0 30px;
+  }
+  .qr-code-container{
+    display:inline-block;
+    padding:20px;
+    background:white;
+    border:2px solid var(--italian-green);
+    border-radius:8px;
+    margin:20px 0;
+  }
+  .qr-code-container svg{
+    display:block;
+    width:280px;
+    height:280px;
+  }
+  .qr-instruction{
+    font-size:14px;
+    color:var(--muted);
+    margin:20px 0 40px;
+  }
+  .qr-print-footer{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding-top:30px;
+    border-top:2px solid var(--line);
+    margin-top:40px;
+    text-align:left;
+  }
+  .qr-footer-col h3{
+    font-size:14px;
+    font-weight:600;
+    color:var(--italian-green);
+    margin:0 0 10px;
+  }
+  .qr-footer-col p{
+    font-size:11px;
+    color:var(--ink);
+    margin:4px 0;
+    line-height:1.6;
+  }
+  .qr-social-links{
+    display:flex;
+    gap:10px;
+    margin-top:8px;
+  }
+  .qr-social-links svg{
+    width:18px;
+    height:18px;
+    color:var(--italian-green);
+  }
 }
