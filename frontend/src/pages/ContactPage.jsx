@@ -1,4 +1,5 @@
 import { ArrowRight, Clock, Instagram, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { cafeConfig } from '../config'
 
@@ -15,9 +16,9 @@ export default function ContactPage() {
         <span className="contact-icon"><MapPin/></span>
         <h2>{t('location')}</h2>
         <p>{cafeConfig.address}</p>
-        <a className="text-link" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cafeConfig.address)}`} target="_blank" rel="noreferrer">
+        <Link className="text-link" to="/locations">
           Open map <ArrowRight size={15}/>
-        </a>
+        </Link>
       </div>
       <div className="contact-card">
         <span className="contact-icon"><Clock/></span>
@@ -37,13 +38,13 @@ export default function ContactPage() {
         </div>
       </div>
     </section>
-    {/* <section className="map-placeholder">
+    <section className="map-placeholder">
       <MapPin size={30}/>
       <h2>Find your way to us</h2>
-      <p>Update the café address in src/config.js to show the correct location.</p>
-      <a className="text-link" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cafeConfig.address)}`} target="_blank" rel="noreferrer">
-        Open Google Maps <ArrowRight size={15}/>
-      </a>
-    </section> */}
+      <p>Visit our locations page to see all our branches and get directions.</p>
+      <Link className="text-link" to="/locations">
+        View All Locations <ArrowRight size={15}/>
+      </Link>
+    </section>
   </>
 }

@@ -42,7 +42,7 @@ export default function Home({items, onSelectItem}) {
     
     <section className="story-section" id="story">
       <div className="story-photo">
-        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=85" alt="Authentic Italian gelato" loading="lazy"/>
+        <img src="/home2.jpg" alt="Authentic Italian gelato" loading="lazy"/>
         <div className="photo-note">
           <Coffee/>
           <span>Authentic Italian gelato</span>
