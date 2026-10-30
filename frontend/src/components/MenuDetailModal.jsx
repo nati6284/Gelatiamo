@@ -30,20 +30,23 @@ export default function MenuDetailModal({item, onClose}) {
           <p className="modal-description">{item.description}</p>
           
           <div className="modal-info-grid">
+            
+            
+            <div className="info-item">
+              <span className="info-label">Section</span>
+              <span className="info-value">{item.category}</span>
+            </div>
+
             <div className="info-item">
               <span className="info-label">Price</span>
               <span className="info-value">{money(item.price)}</span>
             </div>
             
             <div className="info-item">
-              <span className="info-label">Section</span>
-              <span className="info-value">{item.category}</span>
+              <span className="info-label">All Price Before 5% service</span>
+              
             </div>
             
-            <div className="info-item">
-              <span className="info-label">Includes</span>
-              <span className="info-value">15% VAT • 5% service</span>
-            </div>
           </div>
         </div>
       </div>
