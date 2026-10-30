@@ -346,13 +346,13 @@ export const menuData = {
       name: 'Mango Shake',
       description: 'Tropical mango shake',
       price: '400.00',
-      image: 'https://i.pinimg.com/736x/57/46/60/574660a64d089888718e73b3a241cf42.jpg'
+      image: 'https://i.pinimg.com/736x/dc/f1/c6/dcf1c6d840fef506eb8b9a5ff9808850.jpg'
     },
     {
       name: 'Avocado Shake',
       description: 'Creamy avocado shake',
       price: '400.00',
-      image: 'https://i.pinimg.com/736x/46/d8/15/46d815be729c637ceaf9be14d1f80a04.jpg'
+      image: 'https://i.pinimg.com/736x/ca/d6/73/cad6730874353f055279a6ed4877ef51.jpg'
     },
     {
       name: 'Papaya Shake',
