@@ -26,7 +26,7 @@ export default function Navbar() {
         <NavLink to="/" onClick={() => setMenuOpen(false)}>{t('home')}</NavLink>
         <NavLink to="/menu" onClick={() => setMenuOpen(false)}>{t('menu')}</NavLink>
         <NavLink to="/locations" onClick={() => setMenuOpen(false)}>{t('locations')}</NavLink>
-        <NavLink to="/#story" onClick={() => setMenuOpen(false)}>{t('story')}</NavLink>
+        {/* <NavLink to="/#story" onClick={() => setMenuOpen(false)}>{t('story')}</NavLink> */}
         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>{t('contact')}</NavLink>
         <button 
           className="mobile-lang-toggle" 

@@ -10,8 +10,10 @@ public class MenuItem {
   @NotNull @DecimalMin("0.0") private Double price;
   @Size(max=1000) private String image;
   private boolean available = true;
+  private boolean popular = false;
   public MenuItem() {}
   public MenuItem(String name,String description,String category,Double price,String image,boolean available){this.name=name;this.description=description;this.category=category;this.price=price;this.image=image;this.available=available;}
+  public MenuItem(String name,String description,String category,Double price,String image,boolean available,boolean popular){this.name=name;this.description=description;this.category=category;this.price=price;this.image=image;this.available=available;this.popular=popular;}
   public Long getId(){return id;} public void setId(Long id){this.id=id;}
   public String getName(){return name;} public void setName(String name){this.name=name;}
   public String getDescription(){return description;} public void setDescription(String description){this.description=description;}
@@ -19,4 +21,5 @@ public class MenuItem {
   public Double getPrice(){return price;} public void setPrice(Double price){this.price=price;}
   public String getImage(){return image;} public void setImage(String image){this.image=image;}
   public boolean isAvailable(){return available;} public void setAvailable(boolean available){this.available=available;}
+  public boolean isPopular(){return popular;} public void setPopular(boolean popular){this.popular=popular;}
 }

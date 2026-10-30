@@ -11,8 +11,8 @@ public class DataSeeder {
  @Bean CommandLineRunner seedMenu(MenuItemRepository repo){return args->{
   if(repo.count()==0){
    // ICE CREAM
-   repo.save(new MenuItem("Scoop","Single scoop of ice cream","Ice Cream",315.0,"https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Stick","Ice cream on a stick","Ice Cream",378.0,"https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85",true));
+   repo.save(new MenuItem("Scoop","Single scoop of ice cream","Ice Cream",315.0,"https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=900&q=85",true,true));
+   repo.save(new MenuItem("Stick","Ice cream on a stick","Ice Cream",378.0,"https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85",true,true));
    repo.save(new MenuItem("1Kg Ice Cream","One kilogram of ice cream","Ice Cream",5040.0,"https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("1/2 Kg Ice Cream","Half kilogram of ice cream","Ice Cream",2520.0,"https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=85",true));
    
@@ -23,17 +23,17 @@ public class DataSeeder {
    repo.save(new MenuItem("Special Chocolate Torta","Premium special chocolate torta","Torta",3675.0,"https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=85",true));
    
    // VIRGIN COCKTAIL
-   repo.save(new MenuItem("Classic Mojito","Refreshing classic mojito","Virgin Cocktail",315.0,"https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Mango Mojito","Tropical mango flavored mojito","Virgin Cocktail",367.5,"https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Strawberry Mojito","Sweet strawberry mojito","Virgin Cocktail",367.5,"https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=900&q=85",true));
+   repo.save(new MenuItem("Classic Mojito","Refreshing classic mojito","Virgin Cocktail",315.0,"https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=900&q=85",true,false));
+   repo.save(new MenuItem("Mango Mojito","Tropical mango flavored mojito","Virgin Cocktail",367.5,"https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&fit=crop&w=900&q=85",true,false));
+   repo.save(new MenuItem("Strawberry Mojito","Sweet strawberry mojito","Virgin Cocktail",367.5,"https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=900&q=85",true,true));
    repo.save(new MenuItem("Blue Hawaiian Mojito","Exotic blue Hawaiian mojito","Virgin Cocktail",367.5,"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Gelatino Special Mojito","House special signature mojito","Virgin Cocktail",420.0,"https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Virgin Espresso Mojito","Coffee-infused mojito","Virgin Cocktail",367.5,"https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Virgin Margarita Mojito","Tangy margarita style mojito","Virgin Cocktail",367.5,"https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85",true));
    
    // CAKE
-   repo.save(new MenuItem("English Cake","Traditional English cake","Cake",126.0,"https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Banana Cake","Moist banana cake","Cake",126.0,"https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=900&q=85",true));
+   repo.save(new MenuItem("English Cake","Traditional English cake","Cake",126.0,"https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&w=900&q=85",true,false));
+   repo.save(new MenuItem("Banana Cake","Moist banana cake","Cake",126.0,"https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=900&q=85",true,false));
    repo.save(new MenuItem("Raisen Cake","Classic raisin cake","Cake",126.0,"https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Baklava","Sweet layered pastry","Cake",105.0,"https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Boxegna","Traditional Ethiopian sweet","Cake",231.0,"https://images.unsplash.com/photo-1587241321921-91a834d82d90?auto=format&fit=crop&w=900&q=85",true));
@@ -45,7 +45,7 @@ public class DataSeeder {
    repo.save(new MenuItem("Chocolate Cake","Classic chocolate cake","Cake",231.0,"https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("White Forest","White chocolate forest cake","Cake",210.0,"https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Black Forest","Classic black forest cake","Cake",210.0,"https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Tiramisu","Italian coffee dessert","Cake",231.0,"https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85",true));
+   repo.save(new MenuItem("Tiramisu","Italian coffee dessert","Cake",231.0,"https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85",true,true));
    repo.save(new MenuItem("Caramel","Caramel cake","Cake",231.0,"https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Millifoni","Layered puff pastry cake","Cake",231.0,"https://images.unsplash.com/photo-1519915212116-7cfef71f1d3e?auto=format&fit=crop&w=900&q=85",true));
    
@@ -64,8 +64,8 @@ public class DataSeeder {
    repo.save(new MenuItem("Ambo Water","Sparkling mineral water","Cold Drinks",136.5,"https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9f?auto=format&fit=crop&w=900&q=85",true));
    
    // BREAKFAST
-   repo.save(new MenuItem("Pancake With Syrup / Honey","Fluffy pancakes with syrup or honey","Breakfast",420.0,"https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Special Fatira","Special Ethiopian flatbread","Breakfast",577.5,"https://images.unsplash.com/photo-1587241321921-91a834d82d90?auto=format&fit=crop&w=900&q=85",true));
+   repo.save(new MenuItem("Pancake With Syrup / Honey","Fluffy pancakes with syrup or honey","Breakfast",420.0,"https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=85",true,true));
+   repo.save(new MenuItem("Special Fatira","Special Ethiopian flatbread","Breakfast",577.5,"https://images.unsplash.com/photo-1587241321921-91a834d82d90?auto=format&fit=crop&w=900&q=85",true,true));
    repo.save(new MenuItem("Chechebsa","Traditional Ethiopian breakfast","Breakfast",420.0,"https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Special Chechebsa","Premium chechebsa with extras","Breakfast",525.0,"https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Ful","Traditional fava bean dish","Breakfast",315.0,"https://images.unsplash.com/photo-1555210530-9e885e1dc0a2?auto=format&fit=crop&w=900&q=85",true));
@@ -82,8 +82,8 @@ public class DataSeeder {
    repo.save(new MenuItem("Brownie With Double Scoop","Brownie with two scoops of ice cream","Breakfast",981.23,"https://images.unsplash.com/photo-1607920591413-4ec007e70023?auto=format&fit=crop&w=900&q=85",true));
    
    // LUNCH
-   repo.save(new MenuItem("Vegetable Pizza","Fresh vegetable pizza","Lunch",682.5,"https://images.unsplash.com/photo-1511689660979-10d2b1aada49?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Margerita Pizza","Classic margerita pizza","Lunch",1050.0,"https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=85",true));
+   repo.save(new MenuItem("Vegetable Pizza","Fresh vegetable pizza","Lunch",682.5,"https://images.unsplash.com/photo-1511689660979-10d2b1aada49?auto=format&fit=crop&w=900&q=85",true,false));
+   repo.save(new MenuItem("Margerita Pizza","Classic margerita pizza","Lunch",1050.0,"https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=85",true,true));
    repo.save(new MenuItem("Chicken Pizza","Chicken topped pizza","Lunch",1155.0,"https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Beef Pizza","Beef topped pizza","Lunch",1102.5,"https://images.unsplash.com/photo-1542574621-e088a4464f7e?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Special Pizza","House special pizza","Lunch",1312.5,"https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",true));
@@ -106,8 +106,8 @@ public class DataSeeder {
    repo.save(new MenuItem("Mini Special Burger","Small special burger","Lunch",997.5,"https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=900&q=85",true));
    
    // SANDWICHES & WRAPS
-   repo.save(new MenuItem("Veggie Wrap","Fresh vegetable wrap","Sandwiches & Wraps",577.5,"https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",true));
-   repo.save(new MenuItem("Chicken Wrap","Grilled chicken wrap","Sandwiches & Wraps",945.0,"https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=85",true));
+   repo.save(new MenuItem("Veggie Wrap","Fresh vegetable wrap","Sandwiches & Wraps",577.5,"https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",true,false));
+   repo.save(new MenuItem("Chicken Wrap","Grilled chicken wrap","Sandwiches & Wraps",945.0,"https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=85",true,true));
    repo.save(new MenuItem("Egg Sandwich","Classic egg sandwich","Sandwiches & Wraps",420.0,"https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Special Egg Sandwich","Enhanced egg sandwich","Sandwiches & Wraps",525.0,"https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85",true));
    repo.save(new MenuItem("Club Sandwich","Triple decker club sandwich","Sandwiches & Wraps",945.0,"https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",true));

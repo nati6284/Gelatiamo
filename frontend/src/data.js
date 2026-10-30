@@ -13,12 +13,14 @@ export const menuData = {
       description: 'Fluffy pancakes served with syrup or honey',
       price: '420.00',
       image: 'https://brokenovenbaking.com/wp-content/uploads/2023/01/cinnamon-honey-pancakes-8.jpg'
+      
     },
     {
       name: 'Special Fatira',
       description: 'Special traditional breakfast pastry',
       price: '577.50',
       image: 'https://i.pinimg.com/736x/51/51/cd/5151cdfe886623d344d8c1c78c574425.jpg'
+      
     },
     {
       name: 'Chechebsa',
@@ -72,7 +74,8 @@ export const menuData = {
       name: 'Waffle With Double Scoop',
       description: 'Waffle with double scoop ice cream',
       price: '1212.75',
-      image: '/Waffle With Double Scoop.jpg'
+      image: '/Waffle With Double Scoop.jpg',
+      popular: true
     },
     {
       name: 'Waffle With Chocolate',
@@ -188,7 +191,8 @@ export const menuData = {
       name: 'Tiramisu',
       description: 'Classic Italian tiramisu',
       price: '231.00',
-      image: '/Tiramisu.jpg'
+      image: '/Tiramisu.jpg',
+      popular: true
     },
     {
       name: 'Caramel',
@@ -208,13 +212,15 @@ export const menuData = {
       name: 'Scoop',
       description: 'Single scoop of gelato',
       price: '315.00',
-      image: '/scoop2.jpg'
+      image: '/scoop2.jpg',
+      popular: true
     },
     {
       name: 'Stick',
       description: 'Ice cream stick',
       price: '378.00',
-      image: '/Stick2.jpg'
+      image: '/Stick2.jpg',
+      popular: true
     },
     {
       name: '1Kg Ice Cream',
@@ -296,7 +302,9 @@ export const menuData = {
       name: 'Milk Shake',
       description: 'Creamy milkshake',
       price: '472.50',
-      image: '/Milkshake.jpg'
+      image: '/Milkshake.jpg',
+      popular: true
+
     },
     {
       name: 'Strawberry Shake',
@@ -444,7 +452,8 @@ export const menuData = {
       name: 'Strawberry Mojito',
       description: 'Strawberry flavored mojito',
       price: '367.50',
-      image: '/Strawberry Mojito.jpg'
+      image: '/Strawberry Mojito.jpg',
+      popular: true
     },
     {
       name: 'Blue Hawaiian Mojito',
@@ -483,6 +492,7 @@ export const menuData = {
       description: 'Classic margerita pizza',
       price: '1050.00',
       image: 'https://i.pinimg.com/736x/df/bc/51/dfbc51e79f8d81bae9ea8bb8572cea06.jpg'
+      
     },
     {
       name: 'Chicken Pizza',
@@ -566,7 +576,8 @@ export const menuData = {
       name: 'Lasagna/Pesto',
       description: 'Lasagna with pesto',
       price: '945.00',
-      image: '/Lasagna.jpg'
+      image: '/Lasagna.jpg',
+      popular: true
     },
     {
       name: 'Tagliatelle',
@@ -616,7 +627,8 @@ export const menuData = {
       name: 'Chicken Wrap',
       description: 'Grilled chicken wrap',
       price: '945.00',
-      image: 'https://i.pinimg.com/736x/9b/44/99/9b449935462de2ef94bf109e5b9d79e0.jpg'
+      image: 'https://i.pinimg.com/736x/9b/44/99/9b449935462de2ef94bf109e5b9d79e0.jpg',
+      popular: true
     },
     {
       name: 'Egg Sandwich',
@@ -729,12 +741,12 @@ export const menuData = {
 
 // Sample menu data used as fallback when API is unavailable
 export const sampleMenu = [
-  {id:'1',name:'Pistachio Gelato',description:'Authentic Sicilian pistachio gelato with roasted nuts.',category:'Gelato',price:100,image:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85',available:true},
-  {id:'2',name:'Chocolate Gelato',description:'Rich Belgian dark chocolate gelato.',category:'Gelato',price:80,image:'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85',available:true},
-  {id:'3',name:'Tiramisu',description:'Classic Italian coffee-flavored dessert.',category:'Dessert',price:200,image:'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85',available:true},
-  {id:'4',name:'Gelatiamo Breakfast Combo',description:'Egg scrambled, kifli, cheddar cheese, kircha, breakfast potato, avocado slice.',category:'Breakfast',price:250,image:'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=85',available:true},
-  {id:'5',name:'Chocolate Torta',description:'Rich chocolate layered cake with dark chocolate ganache.',category:'Dessert',price:180,image:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85',available:true},
-  {id:'6',name:'Cappuccino',description:'Espresso with steamed milk and foam.',category:'Coffee',price:70,image:'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85',available:true},
-  {id:'7',name:'Mango Smoothie',description:'Creamy mango smoothie with yogurt.',category:'Drinks',price:80,image:'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=85',available:true},
-  {id:'8',name:'Strawberry Gelato',description:'Fresh strawberry gelato with real fruit pieces.',category:'Gelato',price:85,image:'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=85',available:true}
+  {id:'1',name:'Pistachio Gelato',description:'Authentic Sicilian pistachio gelato with roasted nuts.',category:'Gelato',price:100,image:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85',available:true,popular:false},
+  {id:'2',name:'Chocolate Gelato',description:'Rich Belgian dark chocolate gelato.',category:'Gelato',price:80,image:'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85',available:true,popular:false},
+  {id:'3',name:'Tiramisu',description:'Classic Italian coffee-flavored dessert.',category:'Dessert',price:200,image:'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85',available:true,popular:true},
+  {id:'4',name:'Gelatiamo Breakfast Combo',description:'Egg scrambled, kifli, cheddar cheese, kircha, breakfast potato, avocado slice.',category:'Breakfast',price:250,image:'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=85',available:true,popular:true},
+  {id:'5',name:'Chocolate Torta',description:'Rich chocolate layered cake with dark chocolate ganache.',category:'Dessert',price:180,image:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85',available:true,popular:false},
+  {id:'6',name:'Cappuccino',description:'Espresso with steamed milk and foam.',category:'Coffee',price:70,image:'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85',available:true,popular:false},
+  {id:'7',name:'Mango Smoothie',description:'Creamy mango smoothie with yogurt.',category:'Drinks',price:80,image:'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=85',available:true,popular:true},
+  {id:'8',name:'Strawberry Gelato',description:'Fresh strawberry gelato with real fruit pieces.',category:'Gelato',price:85,image:'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=85',available:true,popular:false}
 ]

@@ -9,5 +9,6 @@ public class PublicController {
  public PublicController(MenuItemRepository menu){this.menu=menu;}
  @GetMapping("/health") public Map<String,String> health(){return Map.of("status","ok");}
  @GetMapping("/menu") public List<MenuItem> menu(){return menu.findByAvailableTrueOrderByCategoryAscNameAsc();}
+ @GetMapping("/menu/popular") public List<MenuItem> popular(){return menu.findByPopularTrueAndAvailableTrue();}
  @GetMapping("/menu/categories") public List<String> categories(){return menu.findByAvailableTrueOrderByCategoryAscNameAsc().stream().map(MenuItem::getCategory).distinct().toList();}
 }
