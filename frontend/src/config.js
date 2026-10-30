@@ -3,7 +3,7 @@ export const cafeConfig = {
   tagline: 'Italian Cremeria & Cafe',
   logo: '/logo.png', // Place your logo.png file in the frontend/public folder
   phone: '+251 911 234 567',
-  address: 'Bole , Addis Ababa, Ethiopia',
+  address: ' Addis Ababa, Ethiopia',
   email: 'info@gelatiamo.et',
   openingHours: 'Every day · 8:00 AM – 10:00 PM',
   instagram: 'https://www.instagram.com/gelatiamo_addis',

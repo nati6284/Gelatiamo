@@ -29,7 +29,11 @@ const words = {
       'Ice Cream':'Ice Cream',
       Cakes:'Cakes',
       'Cold Drinks':'Cold Drinks',
-      'Hot Drinks':'Hot Drinks'
+      'Hot Drinks':'Hot Drinks',
+      'Virgin Cocktail':'Virgin Cocktail',
+      Lunch:'Lunch',
+      'Sandwiches Wraps':'Sandwiches & Wraps',
+      Extra:'Extra'
     }
   },
   am: {
@@ -61,7 +65,11 @@ const words = {
       'Ice Cream':'አይስክሬም',
       Cakes:'ኬኮች',
       'Cold Drinks':'ቀዝቃዛ መጠጦች',
-      'Hot Drinks':'ሙቅ መጠጦች'
+      'Hot Drinks':'ሙቅ መጠጦች',
+      'Virgin Cocktail':'ድንግል ኮክቴል',
+      Lunch:'ምሳ',
+      'Sandwiches Wraps':'ሳንድዊች እና ራፕ',
+      Extra:'ተጨማሪ'
     }
   }
 }
